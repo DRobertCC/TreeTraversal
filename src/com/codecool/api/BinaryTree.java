@@ -15,6 +15,7 @@ public class BinaryTree {
     }
     /* =============================================================== */
 
+// Depth-First Searches:
 
     // Preorder print of the nodes of a binary tree
 
@@ -83,6 +84,10 @@ public class BinaryTree {
     /* =============================================================== */
 
 
+
+
+// Breadth-First Searches (Level order traversal):
+
     // Recursive Java program for level order traversal of Binary Tree
 
     // Function to print level order traversal of tree
@@ -146,6 +151,15 @@ public class BinaryTree {
             if (tempNode.right != null) {
                 queue.add(tempNode.right);
             }
+        }
+    }
+
+
+    public void print(String prefix, Node root, boolean isLeft) {
+        if (root != null) {
+            print(prefix + "     ", root.right, false);
+            System.out.println (prefix + ("|-- ") + root.key);
+            print(prefix + "     ", root.left, true);
         }
     }
 }
