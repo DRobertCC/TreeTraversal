@@ -11,13 +11,19 @@ class Main {
         tree.root.left.left = new Node(4);
         tree.root.left.right = new Node(5);
 
-        System.out.println("\nPreorder traversal of binary tree  ");
+        System.out.println("\nPreorder traversal of the binary tree: ");
         tree.printPreorder();
 
-        System.out.println("\nInorder traversal of binary tree   ");
+        System.out.println("\nInorder traversal of the binary tree: ");
         tree.printInorder();
 
-        System.out.println("\nPostorder traversal of binary tree ");
+        System.out.println("\nPostorder traversal of the binary tree: ");
         tree.printPostorder();
+
+        System.out.println("\nLevel order recursive traversal of the binary tree: ");
+        tree.printLevelOrderRecursive();
+
+        System.out.println("\nLevel order traversal of the binary tree with queue: ");
+        tree.printLevelOrderQueue();
     }
 }
