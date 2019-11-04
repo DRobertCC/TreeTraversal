@@ -22,7 +22,8 @@ class Main {
         tree.root.right.right.left = new Node(14);
         tree.root.right.right.right = new Node(15);
         tree.root.left.left.left.left = new Node(16);
-        tree.root.right.right.right.right = new Node(17);
+        tree.root.right.right.right.left = new Node(17);
+        tree.root.right.right.right.right = new Node(18);
 
         tree.print("", tree.root, false);
 
